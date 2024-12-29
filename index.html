@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunglasses Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sunglasses Store</h1>
+    </header>
+    <main>
+      <label for="season">Select Season:</label>
+      <select id="season" onchange="updateSeason()">
+        <option value="spring">Spring</option>
+        <option value="summer">Summer</option>
+        <option value="autumn">Autumn</option>
+        <option value="winter">Winter</option>
+      </select>
+      <br /><br />
+      <button onclick="startSimulation()">Start Simulation</button>
+      <button onclick="endSimulation()">End Simulation</button>
+      <table id="sunglassesTable">
+        <thead>
+          <tr>
+            <th>Sunglasses Name</th>
+            <th>Lens Type</th>
+            <th>Frame Material</th>
+            <th>Rating</th>
+            <th>Stock Level</th>
+            <th>Price</th>
+            <th>Update Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will be injected here by JavaScript -->
+        </tbody>
+      </table>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
